@@ -1,0 +1,19 @@
+<% include ../../partials/header %> 
+
+<div class="container">
+    <div class="row justify-content-md-center">
+        <div class="col">
+            <h1>هنا سيتم عرض جميع الفعاليات</h1> 
+            <h1>
+                <% events.forEach(function (event) { %>
+                    <%= event.name %>
+                </h1>
+        </div>
+        <p>
+            <a href="/events/<%= event._id %>" class="btn btn-primary">المزيد</a>
+        </p>
+        <% }); %> 
+    </div>
+</div>
+
+<% include ../../partials/footer %>
